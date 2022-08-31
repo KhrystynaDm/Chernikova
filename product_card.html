@@ -176,58 +176,75 @@
     </div>
 </header>
 
-<main class="main">
-    <div class="kama_breadcrumbs__wrap --relative">
-        <div class="container">
-            <div class="kama_breadcrumbs">
-                <span>
-                    <a href="">
-                        <span>Головна</span>
-                    </a>
-                </span>
-                <span class="kb_sep">/</span>
-                <span>
-                    <a href="">
-                        <span>Сукні</span>
-                    </a>
-                </span>
-                <span class="kb_sep">/</span>
-                <span class="kb_title">Сукня «‎Лілея»</span>
+<main class="main ">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="kama_breadcrumbs__wrap --relative">
+                    <div class="kama_breadcrumbs">
+                        <span>
+                            <a href="">
+                                <span>Головна</span>
+                            </a>
+                        </span>
+                        <span class="kb_sep">/</span>
+                        <span>
+                            <a href="">
+                                <span>Сукні</span>
+                            </a>
+                        </span>
+                        <span class="kb_sep">/</span>
+                        <span class="kb_title">Сукня «‎Лілея»</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <section class="s-product-card --relative">
         <img src="assets/img/patternCard.svg" class="section-pattern" alt="">
         <div class="container-fluid p-0">
             <div class="row m-row">
                 <div class="column col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <div class="product-img__wrap d-flex align-justify" id="gallery-mixed-content-demo">
-                        <a href="./assets/img/pc1.png">
-                            <img src="./assets/img/pc1.png" alt="product img" class="product-img">
+                    <div class="product-img__wrap d-flex align-justify gallery-wrapper" id="gallery-mixed-content-demo">
+                        <a href="./assets/img/card/1.png" class="gallery-item" data-src="./assets/img/card/1.png">
+                            <img src="./assets/img/card/1.png" alt="product img" class="product-img">
                         </a>
-                        <a href="./assets/img/pc2.png">
-                            <img src="./assets/img/pc2.png" alt="product img" class="product-img">
+                        <a href="./assets/img/card/2.pn" class="gallery-item" data-src="./assets/img/card/2.png">
+                            <img src="./assets/img/card/2.png" alt="product img" class="product-img">
                         </a>
-
+                        <a href="./assets/img/card/3.png" class="gallery-item" data-src="./assets/img/card/3.png">
+                            <img src="./assets/img/card/3.png" alt="product img" class="product-img">
+                        </a>
+                        <a href="./assets/img/card/4.png" class="gallery-item" data-src="./assets/img/card/4.png">
+                            <img src="./assets/img/card/4.png" alt="product img" class="product-img">
+                        </a>
+                        <a href="./assets/img/card/5.png" class="gallery-item" data-src="./assets/img/card/5.png">
+                            <img src="./assets/img/card/5.png" alt="product img" class="product-img">
+                        </a>
+                        <a href="./assets/img/card/6.png" class="gallery-item" data-src="./assets/img/card/6.png">
+                            <img src="./assets/img/card/6.png" alt="product img" class="product-img">
+                        </a>
                     </div>
                 </div>
                 <div class="column col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
 
-                    <div class="s-product-card__content">
-                        <div class="product__title">Сукня «Лілея»</div>
-                        <div class="product__price d-flex align-left --relative">
-                            <div class="product__price-new">8500 грн</div>
-                            <div class="product__price-old --relative">9500 грн</div>
+                    <div class="product-detail__wrap">
+                        <div class="product__title product-detail__title">Сукня «Лілея»</div>
+                        <div class="product-detail__price d-flex align-left --relative">
+                            <div class="product-detail__price-new">8500 грн</div>
+                            <div class="product-detail__price-old --relative">9500 грн</div>
                         </div>
 
-                        <ul class="product__color d-flex align-middle align-left">
+                        <ul class="product__color d-flex align-middle align-left product-detail__color">
                             <li style="background-color:#FFFFFF"></li>
                             <li style="background-color:#000000"></li>
                         </ul>
                         <div class="row m-row">
                             <div class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <select name="size" class="product__size">
+                                <select name="size" class="product__size product-detail__size">
                                     <option value="">Обери свій розмір</option>
                                     <option value="36">36</option>
                                     <option value="38">38</option>
@@ -236,7 +253,7 @@
                                     <option value="44">44</option>
                                     <option value="46">46</option>
                                 </select>
-                                <select name="material" class="product__material">
+                                <select name="material" class="product__material product-detail__material">
                                     <option value="">Обери матеріал</option>
                                     <option value="material1">Сорочкова тканина</option>
                                     <option value="material2">Шовк</option>
@@ -248,28 +265,32 @@
                                 <button class="btn btn-primary">Додати до замовлення</button>
                             </div>
                             <div class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                                <button class="btn btn-size">Таблиця розмірів</button>
-                                <a href="">Як зняти мірки?</a>
+                                <button class="btn btn-size modalTrigger d-none" data-modal="#modal-consultation">Таблиця
+                                    розмірів
+                                </button>
+
+                                <div class="open-popup d-none" data-rel="1">new popup</div>
+                                <a href="" class="d-none">Як зняти мірки?</a>
                             </div>
 
                         </div>
                         <hr>
                         <div class="product-detail">
-                            <div class="product__code">Артикул: КЛ 1707</div>
-                            <div class="product__desc">Сучасний погляд на традиційне вишите плаття. Старовинні
+                            <div class="product-detail__code">Артикул: КЛ 1707</div>
+                            <div class="product-detail__desc">Сучасний погляд на традиційне вишите плаття. Старовинні
                                 квіткові
                                 мотиви та мереживо підкреслені витонченим силуетом.
                             </div>
                         </div>
 
-                        <div class="accordion js-accordion cms-content">
+                        <div class="accordion js-accordion ">
                             <div class="accordion-item js-accordion-item">
                                 <div class="accordion-item__header d-flex align-left align-middle js-accordion-header">
                                     Опис
-                                    <img src="assets/img/ar-bottom.svg" alt="icon arrow bottom">
+                                    <img src="assets/img/ar-bottom-accordion.svg" alt="icon arrow bottom">
                                 </div>
                                 <div class="accordion-item__body js-accordion-body">
-                                    <div class="accordion-item__body-inner">
+                                    <div class="accordion-item__body-inner cms-content">
                                         <ul>
                                             <li>Колекція <a href="">«Я. Бачу»</a></li>
                                             <li>Орнамент борщівська вишивка</li>
@@ -283,10 +304,10 @@
                             <div class="accordion-item js-accordion-item">
                                 <div class="accordion-item__header d-flex align-left align-middle js-accordion-header">
                                     Додаткові заміри
-                                    <img src="assets/img/ar-bottom.svg" alt="icon arrow bottom">
+                                    <img src="assets/img/ar-bottom-accordion.svg" alt="icon arrow bottom">
                                 </div>
                                 <div class="accordion-item__body js-accordion-body">
-                                    <div class="accordion-item__body-inner">
+                                    <div class="accordion-item__body-inner cms-content">
                                         <p>Довжина 101 см, довжина рукава 65 см</p>
 
                                         <p>Модель Анна ріст 180 розмір 38</p>
@@ -303,11 +324,27 @@
                             <div class="accordion-item js-accordion-item">
                                 <div class="accordion-item__header d-flex align-left align-middle js-accordion-header">
                                     Догляд
-                                    <img src="assets/img/ar-bottom.svg" alt="icon arrow bottom">
+                                    <img src="assets/img/ar-bottom-accordion.svg" alt="icon arrow bottom">
                                 </div>
                                 <div class="accordion-item__body js-accordion-body">
                                     <div class="accordion-item__body-inner">
+                                        <ul class="care-list">
+                                            <li><img src="assets/img/care1.svg" alt="icon arrow bottom"> <span>Машинне прання макс. 30° С короткий віджим </span>
+                                            </li>
+                                            <li><img src="assets/img/care2.svg" alt="icon arrow bottom"> <span>Машинне прання макс. 30° С короткий віджим </span>
+                                            </li>
+                                            <li><img src="assets/img/care3.svg" alt="icon arrow bottom"> <span>Машинне прання макс. 30° С короткий віджим </span>
+                                            </li>
+                                            <li><img src="assets/img/care4.svg" alt="icon arrow bottom"> <span>Машинне прання макс. 30° С короткий віджим </span>
+                                            </li>
+                                            <li><img src="assets/img/care5.svg" alt="icon arrow bottom"> <span>Машинне прання макс. 30° С короткий віджим </span>
+                                            </li>
+                                            <li><img src="assets/img/ar-bottom-accordion.svg" alt="icon arrow bottom">
+                                                <span>Машинне прання макс. 30° С короткий віджим </span></li>
 
+                                        </ul>
+
+                                        <a href="" class="btn-more d-flex align-middle align-left">Читати детальніше про догляд<i class="icon-arrow-right"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -318,7 +355,7 @@
         </div>
     </section>
 
-    <section class="s-home-catalog --relative">
+    <section class="s-сouple-look --relative">
         <img src="assets/img/pattern.svg" class="section-pattern" alt="">
         <div class="container-fluid p-0">
             <h4 class="section-heading__sub text-center text-uppercase">
@@ -441,6 +478,7 @@
 
                         </div>
 
+                        <div class="swiper-pagination"></div>
                         <div class="swiper-controls d-flex  align-middle align-center">
                             <div class="swiper-button-prev d-flex align-center align-middle">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -461,7 +499,7 @@
         </div>
     </section>
 
-    <section class="s-home-catalog --relative">
+    <section class="s-similar-products --relative">
         <img src="assets/img/pattern.svg" class="section-pattern" alt="">
         <div class="container-fluid p-0">
             <h4 class="section-heading__sub text-center text-uppercase">
@@ -584,6 +622,7 @@
 
                         </div>
 
+                        <div class="swiper-pagination"></div>
                         <div class="swiper-controls d-flex  align-middle align-center">
                             <div class="swiper-button-prev d-flex align-center align-middle">
                                 <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
@@ -609,7 +648,6 @@
             </div>
         </div>
     </section>
-
 
 </main>
 
@@ -799,7 +837,7 @@
                         <a href="" target="_blank">«Web Tune»</a></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="--right d-none d-md-block footer__copyright-desc">
+                    <div class="--right footer__copyright-desc">
                         2022 Copyrights by Chernikova Ukraine
                     </div>
                 </div>
@@ -807,10 +845,67 @@
         </div>
     </div>
 </footer>
+
+
+<!-- One click popup  -->
+<div class="popup-wrapper ">
+    <div class="popup-body">
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container">
+
+
+                <button class="btn-close close-popup"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-consultation" id="modal-consultation">
+    <div class="modal-body">
+        <div class="modal-content">
+            <div class="modal-content__close"><img src="assets/img/close.svg" alt="close icon"></div>
+            <div class="call-back-form overlap">
+
+                <h3 class="modal-content__heading text-center"> Fill out the form</h3>
+
+                <div class="modal-content__desc text-center"> Fill out the form Fill out the form</div>
+
+
+                <div class="row m-row align-center d-flex">
+                    <div class="column col-xl-12 col-lg-12 col-md-12 col-xs-12">
+                        <form>
+                            <div class="form-control">
+                                <label for="name" class="form-control__label">Your name</label>
+                                <input class="form-control__input " id="name"
+                                       type="text"
+                                       name="" value=""
+                                       placeholder="Jackson" title="">
+                            </div>
+                            <div class="form-control">
+                                <label for="email" class="form-control__label">Your phone number</label>
+                                <input class="form-control__input" id="email"
+                                       type="tel"
+                                       name="" value=""
+                                       placeholder="(044) 353 32 23" title="">
+                            </div>
+                            <input type="submit" value="Send"
+                                   class="btn btn-primary s-contacts__form-btn">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/jquery.selectric.min.js"></script>
-
+<script src="./assets/js/lightgallery.min.js"></script>
+<script src="./assets/js/lightgallery-custom.js"></script>
 <script src="./assets/js/js_app.min.js"></script>
 
 <script src="./assets/js/accordion.min.js"></script>

@@ -9,7 +9,7 @@
 
     <title>Chernikova</title>
     <meta name="description" content=""/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="assets/css/app.css"/>
@@ -217,7 +217,7 @@
 
                     <div class="swiper-entry">
                         <div class="swiper-container"
-                             data-options='{"speed": 1200, "parallax":true, "slidesPerView":1, "spaceBetween": 0, "loop": true }'>
+                             data-options='{"speed": 1200, "parallax":true, "slidesPerView":1, "spaceBetween": 0, "loop": true, "customFraction": true }'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="banner__inner">
@@ -325,7 +325,13 @@
                                         <path d="M6 1L1 6.25L6 11" stroke="#fff"/>
                                     </svg>
                                 </div>
-                                <div class="swiper-pagination"></div>
+
+
+                                <div class="custom-fraction-wrap d-flex align-middle align-center">
+                                    <div class="custom-current"></div>
+                                    <span></span>
+                                    <div class="custom-total"></div>
+                                </div>
                                 <div class="swiper-button-next d-flex align-center align-middle">
                                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -347,21 +353,21 @@
                 <li>
                     <a href="" target="_blank" class="share-button fb d-flex align-center align-middle">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z""/>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="" target="_blank" class="share-button tw d-flex align-center align-middle">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" "/>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a href="" target="_blank" class="share-button ig d-flex align-center align-middle">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"/>
+                            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" "/>
                         </svg>
                     </a>
                 </li>
@@ -372,7 +378,7 @@
             <div class="share-button main">
                 <img src="assets/img/chat.svg" alt="" class="share">
                 <svg class="close" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/>
+                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" "/>
                 </svg>
             </div>
         </div>
@@ -521,7 +527,7 @@
 
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-center">
-                    <a href="" class="btn btn-primary text-center">Дивитися усі товари</a>
+                    <a href="catalog2.html" class="btn btn-primary text-center">Дивитися усі товари</a>
                 </div>
             </div>
         </div>
@@ -654,7 +660,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-center">
-                    <a href="" class="btn btn-primary">Переглянути усі колекції</a>
+                    <a href="catalog.html" class="btn btn-primary">Переглянути усі колекції</a>
                 </div>
             </div>
         </div>
@@ -730,7 +736,7 @@
             </h2>
         </div>
         <div class="swiper-entry">
-            <div class="container d-none d-lg-flex">
+            <div class="container d-none d-lg-block">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-right">
 
@@ -1035,9 +1041,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 
     <div class="footer__copyright">
         <div class="container">
@@ -1047,7 +1051,7 @@
                         <a href="" target="_blank">«Web Tune»</a></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <div class="--right d-none d-md-block footer__copyright-desc">
+                    <div class="--right footer__copyright-desc">
                         2022 Copyrights by Chernikova Ukraine
                     </div>
                 </div>

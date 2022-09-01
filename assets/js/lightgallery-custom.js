@@ -4,8 +4,6 @@ jQuery(function ($) {
     $('.gallery-wrapper').lightGallery({
         selector: '.gallery-item',
         subHtmlSelectorRelative: true,
-        prevHtml: '<div class="swiper-button-prev"><i></i></div>',
-        nextHtml: '<div class="swiper-button-next"><i></i></div>'
     });
 
 

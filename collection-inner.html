@@ -71,7 +71,11 @@
 </header>
 
 <main class="main">
-
+    <button class="back-to-top hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+    </button>
     <section class="s-banner">
         <div class="container-fluid p-0">
             <div class="row">
@@ -93,50 +97,49 @@
 
     <section class="s-introduce --relative">
         <img src="assets/img/pattern.svg" class="section-pattern top" alt="">
-        <div class="container">
+        <div class="container-fluid p-0">
             <div class="row align-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                    <div class="section-heading__sub text-center text-uppercase">
+                    <div class="section-heading__sub text-center text-uppercase d-none d-md-block">
                         КОЛЕКЦІЯ
                     </div>
-                    <h1 class="section-heading text-center">
+                    <div class="section-heading text-center d-none d-md-block">
                         «Flower pixel»
-                    </h1>
-
-                </div>
-            </div>
-            <div class="row align-center align-middle">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="s-introduce__image --relative">
-                        <img src="assets/img/collection/introduce.png" alt="" class="">
                     </div>
                 </div>
+            </div>
+            <div class="row align-center align-middle s-introduce__row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="section-heading__sub text-center text-uppercase d-block d-md-none">
+                        КОЛЕКЦІЯ
+                    </div>
+                    <h1 class="section-heading text-center d-block d-md-none">
+                        «Flower pixel»
+                    </h1>
                     <div class="accent-block text-center --relative">
                         <div class="accent-block__image">
                             <img src="assets/img/benefit1.svg" alt="" class="">
                         </div>
                         <div class="accent-block__heading --relative">Про колекцію</div>
-                        <div class="accent-block__desc text-l">Phasellus vehicula, diam venenatis malesuada facilisis,
-                            eros
-                            orci placerat nulla, at aliquet tellus augue eu mi. Nam non turpis cursus, ultricies ligula
-                            id, fermentum augue. Vivamus facilisis metus ut fermentum viverra. Mauris nec efficitur dui,
-                            sit amet dignissim lacus. In elementum fringilla mauri.
+                        <div class="accent-block__desc text-l">Літня капсульна колекція поєднала зрозумілі фасони,
+                            вільні силуети та акцентний принт у вигляді піксельної вишивки за мотивами домотканих
+                            килимів Буковини.
                         </div>
                         <a href="" class="btn btn-primary">Товари колекції</a>
                     </div>
                 </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="s-introduce__image --relative">
+                        <img src="assets/img/collection/collection3.png" alt="" class="">
+                    </div>
+                </div>
             </div>
-
 
             <div class="row align-left">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="s-introduce__desc text-center text-l">
-                        В капсулі представлені сарафани вільного фасону в підлогу, широкі брюки з лампасами, укорочені
-                        топи.
-                        Фокус — на яскравому піксельному принті з червоними квітами, а також стрічках, якими оздоблені
-                        шовкові штани і топи.
+                        В капсулі представлені сарафани вільного фасону в підлогу, широкі брюки з лампасами, укорочені топи.
+                        Фокус — на яскравому піксельному принті з червоними квітами, а також стрічках, якими оздоблені шовкові штани і топи.
                     </div>
                 </div>
             </div>
@@ -243,22 +246,12 @@
         </div>
     </section>
 
-
     <section class="s-text two-column --relative">
-        <img src="assets/img/pattern.svg" class="section-pattern" alt="">
+
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="s-text__heading --relative">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
-                    <div class="s-text__desc text-l accent">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-                        consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque
-                        porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
-                    </div>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="s-text__desc text-l">
-
-
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
                         ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
                         platea
@@ -273,8 +266,35 @@
         </div>
     </section>
 
+    <section class="s-text  --relative">
 
-    <section class="s-gallery slider-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="s-text__desc text-l">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
+                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
+                        platea
+                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
+                        elementum
+                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
+                        efficitur
+                        tellus faucibus.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
+                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
+                        platea
+                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
+                        elementum
+                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
+                        efficitur
+                        tellus faucibus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-gallery slider-text s-slider-text">
         <div class="container-fluid p-0">
             <div class="row align-middle">
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -319,31 +339,62 @@
         </div>
     </section>
 
-    <section class="s-about-collection small-img --relative">
+    <section class="s-image-text reverse-row  --relative">
         <img src="assets/img/pattern.svg" class="section-pattern" alt="">
         <div class="container-fluid p-0">
             <div class="row align-middle">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <img src="assets/img/collection/collection1.png" alt="" class="block-img default-icon">
+                </div>
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="text-l">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo
+                    <div class="text-l block-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                        pretium justo
                         mauris, congue ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac
                         habitasse platea dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum
                         facilisis. In elementum fringilla mauris, et imperdiet tortor consequat.
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <img src="assets/img/collection/collection1.png" alt="" class="s-about-collection__img ">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="s-text two-column pattern --relative">
+        <img src="assets/img/pattern.svg" class="section-pattern" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="s-text__heading --relative">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
+                    <div class="s-text__desc text-l accent">Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                        amet,
+                        consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque
+                        porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="s-text__desc text-l">
+
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
+                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
+                        platea
+                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
+                        elementum
+                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
+                        efficitur
+                        tellus faucibus.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section class="s-about-collection large-img">
+    <section class="s-image-text large-img">
         <div class="container-fluid p-0">
             <div class="row align-middle">
                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-                    <img src="assets/img/collection/collection1.png" alt="" class="s-about-collection__img ">
+                    <img src="assets/img/collection/collection1.png" alt="" class="block-img default-icon">
 
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -363,7 +414,7 @@
         </div>
     </section>
 
-    <section class="s-gallery">
+    <div class="s-gallery">
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -398,10 +449,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-
-    <section class="s-grid text --relative">
+    <div class="s-grid text --relative">
         <img src="assets/img/pattern.svg" class="section-pattern" alt="">
         <div class="container-fluid p-0">
             <div class="row align-middle">
@@ -425,8 +475,9 @@
 
             </div>
         </div>
-    </section>
-    <section class="s-grid">
+    </div>
+
+    <div class="s-grid">
         <div class="container-fluid p-0">
             <div class="row align-middle d-none d-md-flex">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -479,7 +530,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </main>
 
 <footer class="footer">

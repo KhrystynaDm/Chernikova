@@ -70,12 +70,19 @@
     </div>
 </header>
 
-<main class="main">
+<main class="main main__collection">
    <!-- <button class="back-to-top hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
         </svg>
     </button>-->
+
+    <a class="top-link show" href="" id="js-top">
+        <img src="assets/img/up.svg" alt="up icon">
+        <span class="screen-reader-text">Back to top</span>
+    </a>
+
+
     <section class="s-banner">
         <div class="container-fluid p-0">
             <div class="row">
@@ -246,40 +253,22 @@
         </div>
     </section>
 
-    <section class="s-text two-column --relative">
-
+    <section class="s-text two-column pattern --relative">
+        <img src="assets/img/pattern.svg" class="section-pattern" alt="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="s-text__desc text-l">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
-                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
-                        platea
-                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
-                        elementum
-                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
-                        efficitur
-                        tellus faucibus.
+                    <div class="s-text__heading --relative">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
+                    <div class="s-text__desc text-l accent">Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                        amet,
+                        consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque
+                        porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="s-text  --relative">
-
-        <div class="container">
-            <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="s-text__desc text-l">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
-                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
-                        platea
-                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
-                        elementum
-                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
-                        efficitur
-                        tellus faucibus.
+
+
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
                         ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
                         platea
@@ -355,36 +344,6 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="s-text two-column pattern --relative">
-        <img src="assets/img/pattern.svg" class="section-pattern" alt="">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="s-text__heading --relative">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
-                    <div class="s-text__desc text-l accent">Neque porro quisquam est qui dolorem ipsum quia dolor sit
-                        amet,
-                        consectetur Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur Neque
-                        porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur
-                    </div>
-                </div>
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="s-text__desc text-l">
-
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium justo mauris, congue
-                        ultrices sapien porttitor vel. Donec vehicula justo a fringilla molestie. In hac habitasse
-                        platea
-                        dictumst. Suspendisse sodales nisl at eros maximus, non consectetur ipsum facilisis. In
-                        elementum
-                        fringilla mauris, et imperdiet tortor consequat a. Sed facilisis mi vel justo cursus, quis
-                        efficitur
-                        tellus faucibus.
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -710,6 +669,51 @@
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/js_app.min.js"></script>
+
+
+
+<script>
+    // Set a variable for our button element.
+    const scrollToTopButton = document.getElementById('js-top');
+
+    // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+    const scrollFunc = () => {
+        // Get the current scroll value
+        let y = window.scrollY;
+
+        // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+        if (y > 0) {
+            scrollToTopButton.className = "top-link show";
+        } else {
+            scrollToTopButton.className = "top-link hide";
+        }
+    };
+
+    window.addEventListener("scroll", scrollFunc);
+
+    const scrollToTop = () => {
+        // Let's set a variable for the number of pixels we are from the top of the document.
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+        // We'll also animate that scroll with requestAnimationFrame:
+        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            // ScrollTo takes an x and a y coordinate.
+            // Increase the '10' value to get a smoother/slower scroll!
+            window.scrollTo(0, c - c / 10);
+        }
+    };
+
+    // When the button is clicked, run our ScrolltoTop function above!
+    scrollToTopButton.onclick = function (e) {
+        e.preventDefault();
+        scrollToTop();
+    }
+</script>
+
+
 
 </body>
 </html>

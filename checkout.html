@@ -73,106 +73,206 @@
 <main class="main">
 
 
-    <section class="s-measurements --relative ">
+    <section class="s-checkout --relative ">
         <div class="container">
-            <div class="row s-measurements__btn-wrap">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col">
-                    <a href="" class="app__link"><i class="icon-arrow-left"></i> Таблиця розмірів</a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-center col">
-                    <a href="" class="btn btn-primary text-center">Надіслати заміри</a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 col">
-                    <a href="" class="app__link">Як зняти мірки для чоловічого одягу? <i class="icon-arrow-right"></i> </a>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row m-row">
+                <div class="column col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="section-heading__sub text-center text-uppercase">
-                        Заміри
+                        Кошик
                     </div>
                     <h1 class="section-heading text-center">
-                        Як зняти мірки?
+                        Оформлення замовлення
                     </h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/measurements.png" alt="" class="app__img">
-                        </div>
-                        <div class="app__order text-center">1</div>
-                        <div class="app__desc text-center">Обхват грудей. Стрічка має лягати горизонтально по найбільш
-                            виступаючим
-                            точках грудей.
-                        </div>
-                    </div>
-                </div>
+            <div class="row m-row">
+                <div class="column col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
 
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/pc3.png" alt="" class="app__img">
-                        </div>
-                        <div class="app__order">2</div>
-                        <div class="app__desc">Обхват грудей. Стрічка має лягати горизонтально по найбільш виступаючим
-                            точках грудей.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/pc1.png" alt="" class="app__img">
-                        </div>
-                        <div class="app__order">3</div>
-                        <div class="app__desc">
-                            Довжина рукава. Від крайчика плеча до місця, де має закінчуватися рукав.
-                            Якщо рукав йде розширеним, то потрібно міряти трохи довше від зап’ястя, тобто де саме має закінчитися рукав.
+                    <div class="contact-information">
 
-                            Якщо рукав йде регланом, то довжина міряється від початку шиї до місця, де він має закінчитися.
+                        <div class="coupon d-flex align-left align-end">
+                            <label for="coupon_code" class="coupon__label">Маєте купон?</label>
+                            <input type="text" name="coupon_code" class="coupon__input" id="coupon_code"
+                                   value="" placeholder="Введіть номер купону">
+                            <button type="submit" class="coupon__btn" value="Застосувати купон">ADD</button>
+                        </div>
+
+
+                        <div class="form-group two-column">
+                            <div class="form-group__title">Оплата та доставка</div>
+
+                            <div class="form-control">
+                                <input class="form-control__input " id="name" type="text" name="" value=""
+                                       placeholder="Ім’я*" autocomplete="off">
+                            </div>
+                            <div class="form-control">
+                                <input class="form-control__input " id="last_name" type="text" name="" value=""
+                                       placeholder="Прізвище*" title="" autocomplete="off">
+                            </div>
+                            <div class="form-control">
+                                <input class="form-control__input inputmask" value="" type="tel" name=""
+                                       data-inputmask="'mask': '+38 (999) 999 99 99'" data-inputmask-placeholder="x"
+                                       required="" inputmode="text">
+                            </div>
+                            <div class="form-control">
+                                <input class="form-control__input inputmask" value="" type="email" name=""
+                                       placeholder="E-mail*" required="">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-group__title">Додаткова інформація</div>
+                            <div class="form-control">
+                                <textarea class="form-control__textarea" name="" rows="1" id=""
+                                          placeholder="Примітки до замовлень" autocomplete="" autofocus=""></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-group__title with-desc">Яким месенджерем користуєтеся?</div>
+                            <div class="form-group__desc">Наш менеджер зв’яжеться з Вами.</div>
+                            <label class="radio-entry">
+                                <input type="radio" class="radio-entry__input" name="messenger" value="viber">
+                                <span>Viber</span>
+                            </label>
+                            <label class="radio-entry">
+                                <input type="radio" class="radio-entry__input" name="messenger" value="telegram">
+                                <span>Telegram</span>
+                            </label>
+                            <label class="radio-entry">
+                                <input type="radio" class="radio-entry__input" name="messenger" value="whatsapp">
+                                <span>WhatsApp</span>
+                            </label>
+                            <label class="radio-entry">
+                                <input type="radio" class="radio-entry__input" name="messenger" value="messanger">
+                                <span>Messanger</span>
+                            </label>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/pc1.png" alt="" class="app__img">
+                <div class="column col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 checkout-block-form">
+
+                    <div class="order-details">
+
+                        <div class="d-flex align-middle align-left order-details__item">
+                            <div class="order-details__title text-xl">Деталі замовлення</div>
+
                         </div>
-                        <div class="app__order">4</div>
-                        <div class="app__desc">Обхват грудей. Стрічка має лягати горизонтально по найбільш виступаючим
-                            точках грудей.
+                        <div class="cart-item__wrap">
+                            <div class="cart-item row align-middle align-left">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="product__thumbnail">
+                                        <a href="" class="product__thumbnail-link d-flex align-middle">
+                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
+                                    <div class="product__name text-l"> Сарафан
+                                        «Орхідея»
+                                    </div>
+                                    <div class="product__size text-m">Розмір: <span>38</span></div>
+                                    <div class="product__color text-m">Колір:<span>White</span></div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
+                                    <div class="product__quantity">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item row align-middle align-left">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="product__thumbnail">
+                                        <a href="" class="product__thumbnail-link d-flex align-middle">
+                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
+                                    <div class="product__name text-l"> Сарафан
+                                        «Орхідея»
+                                    </div>
+                                    <div class="product__size text-m">Розмір: <span>38</span></div>
+                                    <div class="product__color text-m">Колір:<span>White</span></div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
+                                    <div class="product__quantity">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item row align-middle align-left">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="product__thumbnail">
+                                        <a href="" class="product__thumbnail-link d-flex align-middle">
+                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
+                                    <div class="product__name text-l"> Сарафан
+                                        «Орхідея»
+                                    </div>
+                                    <div class="product__size text-m">Розмір: <span>38</span></div>
+                                    <div class="product__color text-m">Колір:<span>White</span></div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
+                                    <div class="product__quantity">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item row align-middle align-left">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="product__thumbnail">
+                                        <a href="" class="product__thumbnail-link d-flex align-middle">
+                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
+                                    <div class="product__name text-l"> Сарафан
+                                        «Орхідея»
+                                    </div>
+                                    <div class="product__size text-m">Розмір: <span>38</span></div>
+                                    <div class="product__color text-m">Колір:<span>White</span></div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
+                                    <div class="product__quantity">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item row align-middle align-left">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                                    <div class="product__thumbnail">
+                                        <a href="" class="product__thumbnail-link d-flex align-middle">
+                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
+                                    <div class="product__name text-l"> Сарафан
+                                        «Орхідея»
+                                    </div>
+                                    <div class="product__size text-m">Розмір: <span>38</span></div>
+                                    <div class="product__color text-m">Колір:<span>White</span></div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
+                                    <div class="product__quantity">
+                                        1
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/pc1.png" alt="" class="app__img">
-                        </div>
-                        <div class="app__order">5</div>
-                        <div class="app__desc">Обхват грудей. Стрічка має лягати горизонтально по найбільш виступаючим
-                            точках грудей.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="app__item text-center">
-                        <div class="app__img-wrap">
-                            <img src="assets/img/pc1.png" alt="" class="app__img">
-                        </div>
-                        <div class="app__order">5</div>
-                        <div class="app__desc">Обхват грудей. Стрічка має лягати горизонтально по найбільш виступаючим
-                            точках грудей.
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </div>
-        <img src="assets/img/pattern.svg" class="section-pattern" alt="">
+        <img src="assets/img/pattern.svg" class="section-pattern top" alt="">
     </section>
 
 </main>

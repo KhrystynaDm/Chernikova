@@ -16,9 +16,71 @@
 
 </head>
 <body>
-
+<!--
 <header class="header">
-    <div class="container  d-flex align-middle">
+    <div class="header-main container d-flex">
+
+        <nav class="languages-navigation d-block d-md-none">
+            <ul id="lang-navigation1" class="lang">
+                <li class="lang-item current-lang "><a href="#">EN</a></li>
+                <li class="lang-item"><a href="#">RU</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-logo default-icon">
+            <img src="assets/img/logo.svg" alt="logo company">
+        </a>
+
+        <div class="navbar">
+
+
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li class="menu-item  current-menu-item">
+                        <a href="company.html">ABOUT COMPANY</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index.html">GAMES</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="vacancies.html">VACANCIES</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="support.html">SUPPORT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="d-flex align-middle align-right">
+                <nav class="languages-navigation d-none d-md-block">
+                    <ul id="lang-navigation" class="lang">
+                        <li class="lang-item current-lang "><a href="#">EN</a></li>
+                        <li class="lang-item"><a href="#">RU</a></li>
+                    </ul>
+                </nav>
+                <ul class="social-list">
+                    <li class="social-list__item"><a href="" class="d-flex align-middle align-center"><i
+                            class="icon-google"></i> </a></li>
+                    <li class="social-list__item"><a href="" class="d-flex align-middle align-center"><i
+                            class="icon-twitter"></i> </a></li>
+                    <li class="social-list__item"><a href="" class="d-flex align-middle align-center"><i
+                            class="icon-facebook"></i> </a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="burger js-header">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+-->
+
+<header class="header sidebar">
+    <div class="container navbar">
 
         <div class="col-xl-5 col-lg-5 col-md-5 col-xs-12 d-flex align-middle align-justify">
             <nav class="languages-navigation">
@@ -28,21 +90,86 @@
                 </ul>
             </nav>
             <nav class="menu-navigation">
-                <ul id="menu-left-menu" class="nav-left">
-                    <li class="menu-item">
+                <ul id="menu-left-menu" class="nav-left menu">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Магазин</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Колекції</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">fg</a></li>
+                                    <li class="menu-item"><a href="">dfgg</a></li>
+
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
+
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Весілля</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-6">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-6 d-none d-lg-block">
             <div class="header__logo-box default-icon">
                 <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
             </div>
@@ -51,33 +178,333 @@
 
         <div class="col-xl-5 col-lg-5 col-md-5 col-xs-6 d-flex align-middle align-justify">
             <nav class="menu-navigation ">
-                <ul id="menu-right-menu" class="nav-right">
+                <ul id="menu-right-menu" class="nav-right menu">
                     <li class="menu-item">
                         <a href="">Про нас</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item current-menu-item">
                         <a href="">Блог</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Сервіс</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
+
                 </ul>
             </nav>
 
-            <div>icon</div>
+
+
+                <ul class="header-btn__wrap d-none d-lg-flex">
+                    <li class="header-btn">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/phone.svg" alt="" class="overlap"></a>
+                    </li>
+                    <li class="header-btn">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/bag.svg" alt="" class="overlap"></a>
+                    </li>
+                    <li class="header-btn ">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/search.svg" alt="" class="overlap"></a>
+                    </li>
+
+                </ul>
+
         </div>
 
     </div>
+
+    <div class="container header__mobile d-block d-lg-none">
+        <div class="row align-middle">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="burger js-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6">
+                <div class="header__logo-box default-icon">
+                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 d-flex align-right">
+                <ul class="header-btn__wrap  d-flex d-lg-none">
+                    <li class="header-btn">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/phone.svg" alt="" class="overlap"></a>
+                    </li>
+                    <li class="header-btn ">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/search.svg" alt="" class="overlap"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
 
-<main class="main main__collection">
-   <!-- <button class="back-to-top hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-        </svg>
-    </button>-->
 
-    <a class="top-link show" href="" id="js-top">
+
+
+
+<!--
+<header class="header">
+    <div class="container header__wrap">
+        <a href="https://dev-webtune.le-target.com" class="header-logo default-icon">
+            <img src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/logo.svg"
+                 class="attachment-full size-full" alt="" loading="lazy"> </a>
+        <a href="tel:0689167037" class=" header-phone">
+            +38 (068) 916 70 37 </a>
+        <div class="header__navbar header-navbar">
+            <ul id="menu-header-menu-ua" class="menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2642">
+                    <a href="https://dev-webtune.le-target.com/pro-nas/">Про нас</a></li>
+                <li class="menu-item-has-children has-children menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu- item-2777">
+                    <a href="https://dev-webtune.le-target.com/nashi-poslugy/">Наші послуги</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-2537"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2537"><a
+                                href="https://dev-webtune.le-target.com/brending/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                                <div class="custom_sub_title">Брендінг</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                            </div>
+                        </a></li>
+                        <li id="menu-item-2538"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2538"><a
+                                href="https://dev-webtune.le-target.com/marketyng/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                                <div class="custom_sub_title">Інтернет маркетинг</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                            </div>
+                        </a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type_archive menu-item-object-portfolio menu-item-2440"><a
+                        href="https://dev-webtune.le-target.com/portfolio/">Портфоліо</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2643">
+                    <a href="https://dev-webtune.le-target.com/contacts/">Контакти</a></li>
+                <li class="menu-item-has-children has-children menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu- item-2777">
+                    <a href="https://dev-webtune.le-target.com/nashi-poslugy/">Наші послуги</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-2537"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2537"><a
+                                href="https://dev-webtune.le-target.com/brending/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                                <div class="custom_sub_title">Брендінг</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                            </div>
+                        </a></li>
+                        <li id="menu-item-2538"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2538"><a
+                                href="https://dev-webtune.le-target.com/marketyng/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                                <div class="custom_sub_title">Інтернет маркетинг</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                        alt="setting 1"></div>
+                            </div>
+                        </a></li>
+                        <li id="menu-item-2539"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2539">
+                            <a href="https://dev-webtune.le-target.com/marketyng/smm/">
+                                <div class="custom_sub_container">
+                                    <div class="custom_sub_img"><img
+                                            src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                            alt="setting 1"></div>
+                                    <div class="custom_sub_title">SMM просування</div>
+                                    <div class="custom_sub_bg"><img
+                                            src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/setting-1.png"
+                                            alt="setting 1"></div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-2540"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2540"><a
+                                        href="https://dev-webtune.le-target.com/marketyng/adwords/">Контекстна реклама
+                                    Google Ads</a></li>
+                                <li id="menu-item-2541"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2541"><a
+                                        href="https://dev-webtune.le-target.com/marketyng/seo/">Просування сайтів.
+                                    SEO</a></li>
+                                <li id="menu-item-2542"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2542"><a
+                                        href="https://dev-webtune.le-target.com/web-development/">Створення сайтів</a>
+                                </li>
+                                <li id="menu-item-2543"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2543"><a
+                                        href="https://dev-webtune.le-target.com/web-development/design/">UI та UX дизайн
+                                    сайту</a></li>
+                                <li id="menu-item-2544"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2544"><a
+                                        href="https://dev-webtune.le-target.com/web-development/corporate-web-site/">Корпоративний
+                                    сайт</a></li>
+                                <li id="menu-item-2545"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2545"><a
+                                        href="https://dev-webtune.le-target.com/web-development/landing-page/">Односторінковий
+                                    сайт</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-2546"
+                            class="menu-item menu-item-has-children menu-item-type-post_type menu-item-object-page menu-item-2546">
+                            <a
+                                    href="https://dev-webtune.le-target.com/web-development/visit-card/">
+                                <div class="custom_sub_container">
+                                    <div class="custom_sub_img"><img
+                                            src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/group-1aa75.svg"
+                                            alt=""></div>
+                                    <div class="custom_sub_title">Сайт візитка</div>
+                                    <div class="custom_sub_bg"><img
+                                            src="https://dev-webtune.le-target.com/wp-content/uploads/2021/09/group-1aa75.svg"
+                                            alt=""></div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-2540"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2540"><a
+                                        href="https://dev-webtune.le-target.com/marketyng/adwords/">Контекстна реклама
+                                    Google Ads</a></li>
+                                <li id="menu-item-2541"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2541"><a
+                                        href="https://dev-webtune.le-target.com/marketyng/seo/">Просування сайтів.
+                                    SEO</a></li>
+                                <li id="menu-item-2542"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2542"><a
+                                        href="https://dev-webtune.le-target.com/web-development/">Створення сайтів</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li id="menu-item-2547"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2547"><a
+                                href="https://dev-webtune.le-target.com/web-development/sait-katalog/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/10/33.svg"
+                                        alt=""></div>
+                                <div class="custom_sub_title">Сайт каталог</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/10/33.svg"
+                                        alt=""></div>
+                            </div>
+                        </a></li>
+                        <li id="menu-item-2548"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2548"><a
+                                href="https://dev-webtune.le-target.com/web-development/e-commerce/">
+                            <div class="custom_sub_container">
+                                <div class="custom_sub_img"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/10/11.svg"
+                                        alt=""></div>
+                                <div class="custom_sub_title">Створення інтернет магазину</div>
+                                <div class="custom_sub_bg"><img
+                                        src="https://dev-webtune.le-target.com/wp-content/uploads/2021/10/11.svg"
+                                        alt=""></div>
+                            </div>
+                        </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <nav class="languages-navigation ">
+                <ul id="lang-navigation1" class="lang">
+                    <li class="lang-item lang-item-2 lang-item-uk current-lang lang-item-first"><a lang="uk"
+                                                                                                   hreflang="uk"
+                                                                                                   href="https://dev-webtune.le-target.com/">UA</a>
+                    </li>
+                    <li class="lang-item lang-item-4 lang-item-ru"><a lang="ru-RU" hreflang="ru-RU"
+                                                                      href="https://dev-webtune.le-target.com/ru/">RU</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://www.behance.net/webtune" target="_blank" class="d-flex align-middle align-center">
+                        <i class="icon-behance"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.instagram.com/webtuneteam/" target="_blank"
+                       class="d-flex align-middle align-center">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/company/webtunecompany/mycompany/" target="_blank"
+                       class="d-flex align-middle align-center">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.facebook.com/webtuneteam/" target="_blank"
+                       class="d-flex align-middle align-center">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="languages-navigation d-none d-md-block">
+            <ul id="lang-navigation" class="lang">
+                <li class="lang-item lang-item-2 lang-item-uk current-lang lang-item-first"><a lang="uk" hreflang="uk"
+                                                                                               href="https://dev-webtune.le-target.com/">UA</a>
+                </li>
+                <li class="lang-item lang-item-4 lang-item-ru"><a lang="ru-RU" hreflang="ru-RU"
+                                                                  href="https://dev-webtune.le-target.com/ru/">RU</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger js-header">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+-->
+
+<main class="main main__collection">
+    <!-- <button class="back-to-top hidden">
+         <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+         </svg>
+     </button>-->
+
+    <a class="top-link hide" href="" id="js-top">
         <img src="assets/img/up.svg" alt="up icon">
         <span class="screen-reader-text">Back to top</span>
     </a>
@@ -145,8 +572,10 @@
             <div class="row align-left">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="s-introduce__desc text-center text-l">
-                        В капсулі представлені сарафани вільного фасону в підлогу, широкі брюки з лампасами, укорочені топи.
-                        Фокус — на яскравому піксельному принті з червоними квітами, а також стрічках, якими оздоблені шовкові штани і топи.
+                        В капсулі представлені сарафани вільного фасону в підлогу, широкі брюки з лампасами, укорочені
+                        топи.
+                        Фокус — на яскравому піксельному принті з червоними квітами, а також стрічках, якими оздоблені
+                        шовкові штани і топи.
                     </div>
                 </div>
             </div>
@@ -667,9 +1096,9 @@
 </footer>
 
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/modernizr.custom.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
-<script src="./assets/js/js_app.min.js"></script>
-
+<script src="./src/scripts/js_app.js"></script>
 
 
 <script>
@@ -713,7 +1142,204 @@
     }
 </script>
 
+<script>
 
+
+    jQuery(function () {
+
+        $(".burger").on("click", function () {
+            $(this).toggleClass("active"),
+                $(".navbar").toggleClass("is-visible")
+        })
+
+    });
+
+
+    // Sub-menu
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        let childrenItem = document.querySelectorAll('.menu-item-has-children');
+
+        for (let i = 0; i < childrenItem.length; i++) {
+            let btn = document.createElement("button");
+            btn.className = "menu-item__btn";
+            btn.innerHTML = `<i class="icon-ar-bottom"></i>`;
+            childrenItem[i].appendChild(btn);
+        }
+    });
+    $(document).on('click', '.menu-item__btn', function (e) {
+
+        e.preventDefault();
+
+
+        if (!$(this).parents('.menu-item-has-children').hasClass('is-open')) {
+            $(this).parents('.menu-item-has-children').addClass('is-open');
+
+            $(this).parents('.menu-item-has-children').find(".navbar__sub").slideDown();
+
+        } else {
+            $(this).parents('.menu-item-has-children').removeClass("is-open");
+            $(this).parents('.menu-item-has-children').find(".navbar__sub").slideUp();
+        }
+    });
+
+    $(".menu .sub-menu li").hover(function () {
+
+        var value = $(this).attr("data-img");
+        $(this).parents(".navbar__sub").find('img').attr('src', value);
+    });
+</script>
+
+<!--<script>
+
+    // ----- MENU OPEN ----- //
+
+
+     var nav = document.getElementById('mainNav');
+     var res = document.getElementById('bookNow');
+     var cls = document.getElementById('closePop');
+     var mob = document.getElementById('navMobile');
+     var nam = document.getElementById('navMobileBtn');
+
+     var navCont = document.getElementById('navContent');
+     var resCont = document.getElementById('reservation');
+     var mainCont = document.getElementById('mainContent');
+
+     var navOver = document.getElementById('navOverlay');
+     var navItems = navCont.querySelectorAll('.q_split_wrap');
+     var menuScreen = document.getElementById('menu_screen');
+    // var menuScreenItems = menuScreen.querySelectorAll('.screen_item');
+
+
+    // for (var i = navItems.length - 1; i >= 0; i--) {
+    //   var navItem = navItems[i];
+    //   navHoverHandler(navItem, i);
+    // };
+
+    // nav.addEventListener( 'click', function() {
+    // 	hideContent();
+    // 	openNav();
+    // });
+    // nam.addEventListener( 'click', function() {
+    //     hideContent();
+    //     openNav();
+    // });
+    // res.addEventListener( 'click', function() {
+    // 	var resTop = resCont.offsetTop;
+    // 	window.scroll(0, resTop)
+    // });
+    // cls.addEventListener( 'click', function() {
+    // 	showContent();
+    //   	closeNav();
+    // });
+
+
+    // function navHoverHandler(item, i){
+    // 	item.addEventListener( 'mouseover', function() {
+    // 		TweenMax.to(
+    // 		  menuScreenItems[i],.3,
+    // 		  {alpha:1, ease:Power1.easeOut}
+    // 		);
+    // 	});
+    // 	item.addEventListener( 'mouseout', function() {
+    // 		TweenMax.to(
+    // 		  menuScreenItems[i],.3,
+    // 		  {alpha:0, ease:Power1.easeOut}
+    // 		);
+    // 	});
+    // }
+
+    // function hideContent(){
+    // 	disableScroll();
+    // 	TweenMax.to(
+    // 	  mainCont,1,
+    // 	  {xPercent:"-=50", ease:Expo.easeOut}
+    // 	);
+    // 	TweenMax.to(
+    // 	  navOver,1.5,
+    // 	  {alpha:1, ease:Expo.easeOut}
+    // 	);
+    // 	TweenMax.to(
+    // 	  nav,.6,
+    // 	  {right:-200, ease:Power3.easeOut}
+    // 	);
+    //     TweenMax.to(
+    //         mob,.6,
+    //         {top:-100, ease:Power3.easeOut}
+    //     );
+    // 	TweenMax.to(
+    // 	  res,.6,
+    // 	  {right:-200, ease:Power3.easeOut}
+    // 	);
+    // 	TweenMax.to(
+    // 	  cls,.6,
+    // 	  {right:-20, ease:Power3.easeOut}
+    // 	);
+    // }
+
+    // function showContent(){
+    // 	enableScroll();
+    // 	TweenMax.to(
+    // 	  mainCont,1,
+    // 	  {xPercent:0, ease:Expo.easeOut}
+    // 	);
+    // 	TweenMax.to(
+    // 	  navOver,1,
+    // 	  {alpha:0, ease:Expo.easeOut}
+    // 	);
+
+    // 	setTimeout(function(){
+    //    	TweenMax.to(
+    // 		  res,.6,
+    // 		  {right:-20, ease:Power3.easeOut}
+    // 		);
+    // 		TweenMax.to(
+    // 	  	nav,.6,
+    // 	 	 {right:-20, ease:Power3.easeOut}
+    // 		);
+    //         TweenMax.to(
+    //             mob,.6,
+    //             {top:0, ease:Power3.easeOut}
+    //         );
+    //   }, 1000);
+
+    //   TweenMax.to(
+    // 	  cls,.6,
+    // 	  {right:-200, ease:Power3.easeOut}
+    // 	);
+
+
+    // }
+
+    //TweenMax.set(navCont,{xPercent:100});
+
+
+    // function openNav(){
+    // 	TweenMax.to(
+    // 	  navCont,1,
+    // 	  {xPercent:0, ease:Expo.easeOut}
+    // 	);
+
+    // 	TweenMax.staggerFromTo(
+    // 	  navItems,1,
+    // 	  {alpha:0, y:100},
+    // 	  {alpha:1, y:0, ease:Expo.easeOut, delay: 0.1},0.05
+    // 	);
+    // }
+
+
+    // function closeNav(){
+    // 	TweenMax.to(
+    // 	  navCont,1,
+    // 	  {xPercent:100, ease:Expo.easeOut}
+    // 	);
+    // }
+
+
+
+
+
+</script>-->
 
 </body>
 </html>

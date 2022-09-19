@@ -17,8 +17,8 @@
 </head>
 <body>
 
-<header class="header">
-    <div class="container  d-flex align-middle">
+<header class="header sidebar">
+    <div class="container navbar">
 
         <div class="col-xl-5 col-lg-5 col-md-5 col-xs-12 d-flex align-middle align-justify">
             <nav class="languages-navigation">
@@ -28,21 +28,86 @@
                 </ul>
             </nav>
             <nav class="menu-navigation">
-                <ul id="menu-left-menu" class="nav-left">
-                    <li class="menu-item">
+                <ul id="menu-left-menu" class="nav-left menu">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Магазин</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Колекції</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">fg</a></li>
+                                    <li class="menu-item"><a href="">dfgg</a></li>
+
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
+
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Весілля</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item"><a href="">Сукні</a></li>
+                                    <li class="menu-item"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </div>
 
-        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-6">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-6 d-none d-lg-block">
             <div class="header__logo-box default-icon">
                 <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
             </div>
@@ -51,24 +116,90 @@
 
         <div class="col-xl-5 col-lg-5 col-md-5 col-xs-6 d-flex align-middle align-justify">
             <nav class="menu-navigation ">
-                <ul id="menu-right-menu" class="nav-right">
+                <ul id="menu-right-menu" class="nav-right menu">
                     <li class="menu-item">
                         <a href="">Про нас</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item current-menu-item">
                         <a href="">Блог</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item menu-item-has-children">
                         <a href="">Сервіс</a>
+                        <div class="navbar__sub">
+                            <div class="navbar__sub-wrap">
+
+
+                                <ul class="sub-menu">
+                                    <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
+                                    <li class="menu-item"><a href="">Блузки</a></li>
+                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                </ul>
+
+
+                                <div class="navbar__sub-img">
+                                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                                </div>
+
+
+                            </div>
+                        </div>
                     </li>
+
                 </ul>
             </nav>
 
-            <div>icon</div>
+
+
+            <ul class="header-btn__wrap d-none d-lg-flex">
+                <li class="header-btn">
+                    <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/phone.svg" alt="" class="overlap"></a>
+                </li>
+                <li class="header-btn">
+                    <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/bag.svg" alt="" class="overlap"></a>
+                </li>
+                <li class="header-btn ">
+                    <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/search.svg" alt="" class="overlap"></a>
+                </li>
+
+            </ul>
+
         </div>
 
     </div>
+
+    <div class="container header__mobile d-block d-lg-none">
+        <div class="row align-middle">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="burger js-header">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-xs-6">
+                <div class="header__logo-box default-icon">
+                    <img src="assets/img/chernikova-logo-header.svg" alt="Chernikova" class="header__logo">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 d-flex align-right">
+                <ul class="header-btn__wrap  d-flex d-lg-none">
+                    <li class="header-btn">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/phone.svg" alt="" class="overlap"></a>
+                    </li>
+                    <li class="header-btn ">
+                        <a href="" class="d-flex align-middle align-center"><img src="assets/img/header/search.svg" alt="" class="overlap"></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
+
+
+
 <div class="body-padding"></div>
 <main class="main">
 
@@ -130,24 +261,29 @@
                         </div>
 
                         <div class="form-group">
-                            <div class="form-group__title with-desc">Яким месенджерем користуєтеся?</div>
+                            <div class="form-group__title with-desc">Написати у месенджер?</div>
                             <div class="form-group__desc">Наш менеджер зв’яжеться з Вами.</div>
-                            <label class="radio-entry">
-                                <input type="radio" class="radio-entry__input" name="messenger" value="viber">
-                                <span>Viber</span>
-                            </label>
-                            <label class="radio-entry">
-                                <input type="radio" class="radio-entry__input" name="messenger" value="telegram">
-                                <span>Telegram</span>
-                            </label>
-                            <label class="radio-entry">
-                                <input type="radio" class="radio-entry__input" name="messenger" value="whatsapp">
-                                <span>WhatsApp</span>
-                            </label>
-                            <label class="radio-entry">
-                                <input type="radio" class="radio-entry__input" name="messenger" value="messanger">
-                                <span>Messanger</span>
-                            </label>
+
+                            <div class="radio-entry__wrap">
+                                <label class="radio-entry">
+                                    <input type="radio" class="radio-entry__input" checked name="messenger"
+                                           value="viber">
+                                    <span class="radio-entry__label text-l">Viber</span>
+                                </label>
+                                <label class="radio-entry">
+                                    <input type="radio" class="radio-entry__input" name="messenger" value="telegram">
+                                    <span class="radio-entry__label text-l">Telegram</span>
+                                </label>
+                                <label class="radio-entry">
+                                    <input type="radio" class="radio-entry__input" name="messenger" value="whatsapp">
+                                    <span class="radio-entry__label text-l">WhatsApp</span>
+                                </label>
+                                <label class="radio-entry">
+                                    <input type="radio" class="radio-entry__input" name="messenger" value="messanger">
+                                    <span class="radio-entry__label text-l">Messanger</span>
+                                </label>
+
+                            </div>
 
                         </div>
                     </div>
@@ -224,50 +360,93 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="cart-item row align-middle align-left">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
-                                    <div class="product__thumbnail">
-                                        <a href="" class="product__thumbnail-link d-flex align-middle">
-                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
-                                    <div class="product__name text-l"> Сарафан
-                                        «Орхідея»
-                                    </div>
-                                    <div class="product__size text-m">Розмір: <span>38</span></div>
-                                    <div class="product__color text-m">Колір:<span>White</span></div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
-                                    <div class="product__quantity">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-item row align-middle align-left">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4">
-                                    <div class="product__thumbnail">
-                                        <a href="" class="product__thumbnail-link d-flex align-middle">
-                                            <img src="assets/img/pc1.png" alt="" class="product__thumbnail-img">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-7 col-xs-6">
-                                    <div class="product__name text-l"> Сарафан
-                                        «Орхідея»
-                                    </div>
-                                    <div class="product__size text-m">Розмір: <span>38</span></div>
-                                    <div class="product__color text-m">Колір:<span>White</span></div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 col-xs-2 text-center ">
-                                    <div class="product__quantity">
-                                        1
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group delivery">
+                        <div class="form-group__title with-desc">Доставка</div>
+
+
+                        <label class="radio-entry">
+                            <input type="radio" class="toggle-block-control radio-entry__input" name="delivery" vale="1"
+                                   data-block="1"
+                                   data-rel="0" checked="">
+                            <span class="radio-entry__label text-l">Доставка Новою поштою</span>
+                        </label>
+                        <div class="toggle-block" data-block="1" data-rel="0" style="display: block">
+                            Доставка Новою поштою
                         </div>
 
+
+                        <!-- checkbox -->
+
+                        <label class="radio-entry">
+                            <input type="radio" class="toggle-block-control radio-entry__input" name="delivery"
+                                   data-block="1" value="4"
+                                   data-rel="1">
+                            <span class="radio-entry__label text-l">Самовивіз з крамниці чи виробництва м. Івано-Франківськ</span>
+                        </label>
+                        <div class="toggle-block" data-block="1" data-rel="1">
+                            Самовивіз з крамниці чи виробництва м. Івано-Франківськ
+                        </div>
+                        <!-- checkbox -->
+
+                        <label class="radio-entry">
+                            <input type="radio" class="toggle-block-control radio-entry__input" name="delivery"
+                                   value="2" data-block="1"
+                                   data-rel="2">
+                            <span class="radio-entry__label text-l">Доставка кур'єром</span>
+                            <div class="form-group__desc margin">У вартість замовлення не входить вартість доставки
+                            </div>
+                        </label>
+
+                        <div class="toggle-block" data-block="1" data-rel="2">
+                            Доставка кур'єром
+                            У вартість замовлення не входить вартість доставки
+                        </div>
+                        <!-- checkbox -->
+
+                        <label class="radio-entry">
+                            <input type="radio" class="toggle-block-control radio-entry__input" name="delivery"
+                                   value="2" data-block="1"
+                                   data-rel="3">
+                            <span class="radio-entry__label text-l">Міжнародна доставка</span>
+                            <div class="form-group__desc margin">У вартість замовлення не входить вартість доставки
+                            </div>
+                        </label>
+
+                        <div class="toggle-block" data-block="1" data-rel="3">
+                            Міжнародна доставка
+                            У вартість замовлення не входить вартість доставки
+                        </div>
+                    </div>
+
+
+                    <div class="form-group payment">
+
+                        <label class="radio-entry">
+                            <input type="radio" class="radio-entry__input" name="payment" value="payment1">
+                            <span class="radio-entry__label text-l"> Оплата після уточнення деталей</span>
+                            <div class="form-group__desc margin">Не бажаєте оплачувати одразу, або маєте додаткові
+                                запитання? Це не проблема,
+                                просто зробіть замовлення. Наш менеджер зв’яжеться з Вами.
+                            </div>
+                        </label>
+                        <label class="radio-entry">
+                            <input type="radio" class="radio-entry__input" name="payment" value="payment2">
+                            <span class="radio-entry__label text-l"> Fondy Банківські картки, Apple/Google Pay</span>
+                        </label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="checkbox-entry d-flex align-middle align-left">
+                            <input type="checkbox" class="toggle-block-control" name="delivery" value="2" data-block="1"
+                                   data-rel="2">
+                            <span>Я прочитав (а) і погоджуюся з правилами сайту правила та умови</span>
+                        </label>
+                        <input type="submit" value="Підтвердити замовлення" class="btn btn-primary">
+                    </div>
 
                 </div>
             </div>
@@ -475,6 +654,29 @@
     })
 </script>
 
+<script>
+    // checkout tabs
+    $('.toggle-block-control').on('change', function () {
+        let blockNum = $(this).data('block'),
+            rel = $(this).data('rel'),
+            $showBlock = $('.toggle-block[data-block="' + blockNum + '"][data-rel="' + rel + '"]'),
+            $hideBlock = $('.toggle-block[data-block="' + blockNum + '"]:visible');
+
+        if ($(this).is('input[type="checkbox"]')) {
+            $showBlock.slideToggle();
+            return;
+        }
+
+        if ($hideBlock.length) {
+            $hideBlock.slideUp(500, function () {
+                $showBlock.slideDown();
+            });
+        } else {
+            $showBlock.slideDown();
+        }
+    });
+
+</script>
 
 </body>
 </html>

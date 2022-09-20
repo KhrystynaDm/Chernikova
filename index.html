@@ -17,55 +17,6 @@
 </head>
 <body>
 
-<style>
-    html,
-    body {
-        position: relative;
-        height: 100%;
-    }
-
-    body {
-
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-    }
-
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-</style>
-
 
 <header class="header sidebar">
     <div class="container navbar">
@@ -88,8 +39,8 @@
                                 <ul class="sub-menu">
                                     <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
                                     <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
-                                    <li class="menu-item"><a href="">Блузки</a></li>
-                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item"  data-img="assets/img/blog1.png"><a href="">Блузки</a></li>
+                                    <li class="menu-item"  data-img="assets/img/blog2.png"><a href="">ААксусуари</a></li>
                                 </ul>
 
 
@@ -182,8 +133,8 @@
                                 <ul class="sub-menu">
                                     <li class="menu-item" data-img="https://i.imgur.com/15u51cG.jpg"><a href="">Сукні</a></li>
                                     <li class="menu-item" data-img="assets/img/blog1.png"><a href="">Сорочки</a></li>
-                                    <li class="menu-item"><a href="">Блузки</a></li>
-                                    <li class="menu-item"><a href="">ААксусуари</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog2.png"><a href="">Блузки</a></li>
+                                    <li class="menu-item" data-img="assets/img/blog1.png"><a href="">ААксусуари</a></li>
                                 </ul>
 
 
@@ -810,7 +761,7 @@
 
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class=" app__item">
+                                    <div class=" app__item text-center">
                                         <div class="app__img-wrap"><img src="assets/img/blog1.png" alt=""
                                                                         class="app__img "></div>
 
@@ -830,7 +781,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class=" app__item">
+                                    <div class=" app__item text-center">
                                         <div class="app__img-wrap"><img src="assets/img/blog2.png" alt=""
                                                                         class="app__img "></div>
 
@@ -838,11 +789,6 @@
                                             <div class=" app__heading">Особливості колекції «‎Flower Pixel»</div>
                                             <div class="text-m  app__desc">Proin at volutpat quam, sit amet cursus
                                                 sapien. Morbi mi
-                                                velit,
-                                                fringilla id pharetra nec, pretium volutpat ringilla id pharetra
-                                                nec,
-                                                pretium volutpat
-                                                ex.
                                             </div>
                                             <a href="" class=" app__more">Читати далі <i
                                                     class="icon-arrow-right"></i></a>
@@ -850,7 +796,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class=" app__item">
+                                    <div class=" app__item text-center">
                                         <div class="app__img-wrap"><img src="assets/img/blog3.png" alt=""
                                                                         class="app__img "></div>
 
@@ -870,7 +816,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class=" app__item">
+                                    <div class=" app__item text-center">
                                         <div class="app__img-wrap"><img src="assets/img/blog1.png" alt=""
                                                                         class="app__img "></div>
 
@@ -1090,7 +1036,8 @@
 
 <script src="./assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
-<script src="./assets/js/js_app.min.js"></script>
+<script src="assets/js/modernizr.custom.js"></script>
+<script src="./src/scripts/js_app.js"></script>
 
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 
